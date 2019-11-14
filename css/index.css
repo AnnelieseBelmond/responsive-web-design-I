@@ -81,14 +81,9 @@ header nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	z-index: 1;
-	transition-property: padding;
-	transition-duration: 0.5s;
-	padding: 0px 0;
 }
 
 
@@ -98,13 +93,6 @@ header nav a {
 	text-decoration: none;
 	font-weight: 400;
 	padding: 30px;
-}
-
-nav a:hover {
-	transition-property: color, font-weight;
-	transition-duration: 0.5s, 0.5s;
-	color: #fff;
-	font-weight: bold;
 }
 
 .logo {
@@ -225,23 +213,45 @@ h1{
         display: none;
 	}
 	header .iov {
-	align-self: center;
-	margin-top: 100px;
+		align-self: center;
+		margin-top: 100px;
+		margin-right: 80px;
 	}
 	#wrapper{
-		width: 70%;
+		width: 80%;
 	}
 	.header{
-		width: 70%;
+		width: 80%;
 	}
 	header nav{
 		flex-flow: row;
 		flex-wrap: wrap-reverse;
+		justify-content: center;
+	}
+	header nav a{
+		padding: 20px;
 	}
 
 }
 
 @media (max-width:500px) {
-  
+	header nav{
+		flex-direction: column-reverse;
+	}
+	header nav a{
+		align-self: center;
+		z-index: 1;
+		border-bottom: 1px solid #ccc;
+		transition-property: padding;
+		transition-duration: 0.5s;
+		padding: 20px 100px;
+	}
+	.logo {
+		margin-left: 40px;
+	}
+	header .iov {
+		margin-left: 100px;
+		margin-right: 40px;
+	}
 
 }
