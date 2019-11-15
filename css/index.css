@@ -253,5 +253,27 @@ h1{
 		margin-left: 100px;
 		margin-right: 40px;
 	}
-
+	.top-section{
+		flex-wrap: wrap;
+	}
+	#features{
+		margin-right: 20px;
+		padding-bottom: 40px;
+	}
+	.bottom-section{
+		flex-wrap: wrap;
+		margin-left: 0px;
+	}
+	#services{
+		padding-bottom: 40px;
+		margin-left: 0px;
+	}
+	#product{
+		padding-bottom: 40px;
+		margin-left: 0px;
+	}
+	#vision{
+		padding-bottom: 40px;
+		margin-left: 0px;
+	}
 }
